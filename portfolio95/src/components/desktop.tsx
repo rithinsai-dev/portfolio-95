@@ -11,25 +11,22 @@ export function Desktop() {
   const icons = [
     {
       title: "Biography",
-      icon: <Monitor className="h-8 w-8 text-white" />,
+      icon: <img src="/biography.png" alt="Biography" className="h-8 w-8" />,
       onClick: () => addWindow({ title: "Biography", content: "biography" }),
     },
-    // {
-    //   title: "Photos",
-    //   icon: <Image className="h-8 w-8 text-white" />,
-    //   onClick: () => addWindow({ title: "Photos", content: "phots" }),
-    // },
     {
-      title: "Résumé",
-      icon: <FileText className="h-8 w-8 text-white" />,
+      title: "Resume",
+      icon: <img src="/resume.png" alt="Résumé" className="h-8 w-8" />,
       onClick: () => addWindow({ title: "Résumé", content: "resume" }),
     },
     {
       title: "Mail",
-      icon: <Mail className="h-8 w-8 text-white" />,
-      onClick: () => addWindow({ title: "Mail", content: "mail" }),
+      icon: <img src="/mail.png" alt="Résumé" className="h-8 w-8" />,
+      onClick: () => addWindow({ title: "Résumé", content: "resume" }),
     },
+    
   ]
+  
 
   return (
     <div className="p-4 grid grid-cols-1 gap-4 w-fit">

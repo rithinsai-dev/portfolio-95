@@ -32,7 +32,7 @@ export function ProjectFolder() {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-2 p-2 rounded hover:bg-gray-200"
               >
-                <Folder className="h-12 w-12 text-yellow-300" />
+                <img src="/resume.png" alt="Résumé" className="h-8 w-8" />
                 <span className="text-sm">{project.name}</span>
               </a>
             ))}
@@ -47,7 +47,7 @@ export function ProjectFolder() {
       onClick={openProjectsWindow}
       className="flex flex-col items-center gap-1 p-2 rounded hover:bg-white/10 focus:bg-white/10"
     >
-      <Folder className="h-12 w-12 text-yellow-300" />
+      <img src="/resume.png" alt="Résumé" className="h-8 w-8" />
       <span className="text-white text-sm">My Projects</span>
     </button>
   );
