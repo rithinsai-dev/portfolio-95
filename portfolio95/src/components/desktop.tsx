@@ -17,7 +17,7 @@ export function Desktop() {
     // {
     //   title: "Photos",
     //   icon: <Image className="h-8 w-8 text-white" />,
-    //   onClick: () => addWindow({ title: "Photos", content: "photos" }),
+    //   onClick: () => addWindow({ title: "Photos", content: "phots" }),
     // },
     {
       title: "Résumé",
