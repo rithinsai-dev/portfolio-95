@@ -14,8 +14,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn(inter.className, "bg-[#008080] min-h-screen")}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "min-h-screen bg-cover bg-center bg-no-repeat"
+        )}
+        style={{ backgroundImage: "url('/background.png')" }}
+      >
+        {children}
+      </body>
     </html>
   )
 }
-

@@ -11,7 +11,7 @@ export function SidePanel({ isOpen, onClose }: SidePanelProps) {
     { icon: <MessageSquare className="h-5 w-5" />, label: "Reddit", href: "https://reddit.com/" },
     { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/rithinsai-dev/" },
     { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/rithinsai-dev" },
-    { icon: <FileText className="h-5 w-5" />, label: "Résumé", href: "/Rithin_SDE (1).pdf", target: "_blank" },
+    { icon: <FileText className="h-5 w-5" />, label: "Résumé", href: "/Rithin_SDE (4).pdf", target: "_blank" },
     { icon: <Mail className="h-5 w-5" />, label: "Mail", href: "mailto:Rithinsai.pamerla@gmail.com" },
   ];
 
