@@ -5,6 +5,7 @@ import { Window } from "@/components/window"
 import { ResumeWindow } from "@/components/resume-window"
 import { BiographyWindow } from "@/components/BiographyWindow"
 import { MailForm } from "@/components/MailForm"
+import { SkillsWindow } from "./SkillsWindow"
 
 export function WindowManager() {
   const { windows } = useWindows()
@@ -22,6 +23,9 @@ export function WindowManager() {
         }
         if (window.content === "mail") {
           return <MailForm key={window.id} id={window.id} title={window.title} zIndex={window.zIndex} />
+        }
+        if (window.content === "skills") {
+          return <SkillsWindow key={window.id} id={window.id} title={window.title} zIndex={window.zIndex} />
         }
 
         return (

@@ -20,6 +20,11 @@ export function Desktop() {
       onClick: () => addWindow({ title: "Résumé", content: "resume" }),
     },
     {
+      title: "Skills",
+      icon: <img src="/resume.png" alt="Skills" className="h-8 w-8" />,
+      onClick: () => addWindow({ title: "Skills", content: "skills" }),
+    },
+    {
       title: "Mail",
       icon: <img src="/mail.png" alt="Résumé" className="h-8 w-8" />,
       onClick: () => addWindow({ title: "Mail", content: "mail" }),
