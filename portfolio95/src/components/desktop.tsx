@@ -29,9 +29,12 @@ export function Desktop() {
       icon: <img src="/mail.png" alt="Résumé" className="h-8 w-8" />,
       onClick: () => addWindow({ title: "Mail", content: "mail" }),
     },
-    
+     {
+      title: "Gemsweeper",
+      icon: <img src="/mine.jpg" alt="MineSweeper" className="h-8 w-8" />, // Placeholder icon - you can replace with a better one
+      onClick: () => addWindow({ title: "Gemsweeper", content: "gemsweeper" }),
+    },
   ]
-  
 
   return (
     <div className="p-4 grid grid-cols-1 gap-4 w-fit">
@@ -40,6 +43,5 @@ export function Desktop() {
         <DesktopIcon key={icon.title} title={icon.title} icon={icon.icon} onClick={icon.onClick} />
       ))}
     </div>
-  )
+  );
 }
-

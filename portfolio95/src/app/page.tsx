@@ -21,6 +21,5 @@ export default function Page() {
         <Taskbar onSidePanelToggle={() => setIsSidePanelOpen(!isSidePanelOpen)} />
       </main>
     </WindowProvider>
-  )
+  );
 }
-
