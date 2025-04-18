@@ -8,8 +8,10 @@ interface Project {
 
 const projects: Project[] = [
   { name: "MNIST Digit Recognition Model", repoUrl: "https://github.com/rithinsai-dev/MNIST-Full-Stack" },
+  { name: "MicroGPT", repoUrl: "https://colab.research.google.com/drive/1ZlnB7309Uwgu1p038NVNilGsqxwiVI2t?usp=sharing" },
+  { name: "Online Car Dealership", repoUrl: "https://github.com/rithinsai-dev/online-car-dealership" },
   { name: "F1 Route Optimizer", repoUrl: "https://github.com/rithinsai-dev/F1" },
-  { name: "Online Voting System", repoUrl: "https://github.com/rithinsai11/online-voting-system" },
+  
   // Add more projects as needed
 ];
 

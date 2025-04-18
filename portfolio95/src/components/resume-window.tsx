@@ -60,6 +60,15 @@ export function ResumeWindow({ id, title, zIndex }: ResumeWindowProps) {
           <div>
             <h2 className="text-lg font-bold border-b border-gray-300 mb-2">PROJECT EXPERIENCE</h2>
             <div className="space-y-4">
+            <div>
+                <p className="font-semibold">Online Car Dealership</p>
+                <p className="text-sm italic">Next.js, Node.js, Express.js, MongoDB</p>
+                <ul className="list-disc list-inside text-sm space-y-1 mt-1">
+                  <li>Developed a platform that processed 150+ test drive bookings and 80+ car purchases during test deployment.</li>
+                  <li>Reduced backend API response time by 40% (from 500ms to 300ms) through optimized queries and route handling.</li>
+                  <li>Enabled real-time status updates, cutting user wait time by 60% and increasing session completion rate by 35%.</li>
+                </ul>
+              </div>
               <div>
                 <p className="font-semibold">MNIST Digit Recognition Model</p>
                 <p className="text-sm italic">Next.js, Node.js, Python, TensorFlow, Keras, TensorFlow.js</p>
@@ -69,19 +78,12 @@ export function ResumeWindow({ id, title, zIndex }: ResumeWindowProps) {
                 </ul>
               </div>
               <div>
+              
                 <p className="font-semibold">F1 Route Optimizer</p>
                 <p className="text-sm italic">React.js, Node.js, Express.js</p>
                 <ul className="list-disc list-inside text-sm space-y-1 mt-1">
                   <li>Reduced route calculation time by 70% using permutation-based optimization.</li>
                   <li>Handled 50+ requests/sec with &lt;200ms response time during load testing.</li>
-                </ul>
-              </div>
-              <div>
-                <p className="font-semibold">Online Voting System</p>
-                <p className="text-sm italic">HTML, CSS, PHP, MySQL</p>
-                <ul className="list-disc list-inside text-sm space-y-1 mt-1">
-                  <li>Developed a secure voting platform that processed 100+ votes during test deployments.</li>
-                  <li>Reduced vote processing time by 60%, ensuring real-time vote updates.</li>
                 </ul>
               </div>
             </div>
