@@ -1,5 +1,6 @@
 import { Menu } from "lucide-react"
 import { useWindows } from "@/components/window-context"
+import { useState, useEffect } from 'react';
 
 interface TaskbarProps {
   onSidePanelToggle: () => void
@@ -7,6 +8,18 @@ interface TaskbarProps {
 
 export function Taskbar({ onSidePanelToggle }: TaskbarProps) {
   const { windows, activeWindows, restoreWindow } = useWindows()
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const timeIST = currentTime.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' });
+
 
   return (
     <div className="h-10 bg-gray-200 border-t-2 border-gray-300 flex items-center px-2">
@@ -31,7 +44,9 @@ export function Taskbar({ onSidePanelToggle }: TaskbarProps) {
           )
         })}
       </div>
+      <div className="ml-2 px-2 py-1 text-sm font-bold border-2 border-gray-400 rounded-sm bg-gray-300 font-mono" style={{ borderStyle: 'inset' }}>
+        {timeIST}
+      </div>
     </div>
   )
 }
-
