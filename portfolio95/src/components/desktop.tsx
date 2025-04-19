@@ -34,6 +34,11 @@ export function Desktop() {
       icon: <img src="/mine.jpg" alt="MineSweeper" className="h-8 w-8" />, // Placeholder icon - you can replace with a better one
       onClick: () => addWindow({ title: "Gemsweeper", content: "gemsweeper" }),
     },
+     {
+      title: "Films",
+      icon:  <img src="/resume.png" alt="External Link" className="h-8 w-8" />,
+      onClick: () => window.open('https://films-ivory-ten.vercel.app/', '_blank'),
+    },
   ]
 
   return (
